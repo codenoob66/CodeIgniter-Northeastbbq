@@ -55,14 +55,11 @@
       <form class="p-3">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">
-         this is safe
-        </div>
+        <input type="email" placeholder="We would never give out your information" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
       <div>
-        <label for="exampleInputPassword1" class="form-label">Write your message</label>
-        <textarea class="form-control" rows="5" name="" id="" placeholder="write your message here"></textarea>
+        <label for="exampleInputPassword1" class="form-label">Write your inquiry</label>
+        <textarea class="form-control" rows="5" name="" id=""></textarea>
       </div>
       <button type="submit" class="btn btn-danger mt-3">Submit</button>
     </form>
