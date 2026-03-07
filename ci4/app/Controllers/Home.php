@@ -21,8 +21,9 @@ class Home extends BaseController
         
         $email = service('email');
         $email->setFrom('info@northeastbbq.online', 'Website contact form');
-        $email->setTo($userEmail, 'rafael');
+        $email->setTo('info@northeastbbq.online', 'rafael');
         $email->setSubject('Email Test');
+        $email->setReplyTo($userEmail);
         $email->setMessage($userMessage);
         if($email->send())
             {
