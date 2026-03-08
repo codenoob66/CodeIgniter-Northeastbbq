@@ -20,10 +20,8 @@ class Home extends BaseController
         $userMessage = $this->request->getPost('message');
         
         $email = service('email');
-        $email->setFrom('info@northeastbbq.com', 'Website contact form');
+        $email->setFrom('info@northeastbbq.online', 'Website contact form');
         $email->setTo($userEmail, 'rafael');
-        // $email->setCC('another@another-example.com');
-        // $email->setBCC('them@their-example.com');
         $email->setSubject('Email Test');
         $email->setMessage($userMessage);
         if($email->send())
